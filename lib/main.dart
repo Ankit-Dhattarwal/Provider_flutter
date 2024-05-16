@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:state_management_flutter/screen/second_example.dart';
 
-import 'Favourite/fav_with_state_management.dart';
-import 'Favourite/screen/fav_screen.dart';
+// import 'Favourite/fav_with_state_management.dart';
+// import 'Favourite/screen/fav_screen.dart';
 import 'Provider/count_provider.dart';
 import 'Provider/second_example_provider.dart';
 
@@ -24,14 +24,14 @@ class MyApp extends StatelessWidget {
         // yaha par provider wale class ka naam use karana  hai voo class jaha aapa provider create kara ha
         ChangeNotifierProvider(create: (_) => CountProvider(),),
         ChangeNotifierProvider(create: (_) => SliderProvider(),),
-        ChangeNotifierProvider(create: (_) => FavouriteItemProvider(),),
+       // ChangeNotifierProvider(create: (_) => FavouriteItemProvider(),),
       ],
       child: MaterialApp(
         title: 'Flutter Demo',
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: const FavouriteScreen(),
+       // home: const FavouriteScreen(),
       ),
     );
 
